@@ -18,7 +18,7 @@ export default function ThankYouPage() {
 
           {/* BIGGER HEADING: text-5xl to text-8xl */}
           <h1 
-  style={{ fontSize: '65px', marginTop:"100px", color: '#007AD2', fontWeight: 'bold' }}
+  style={{ fontSize: '65px', marginTop:"60px", color: '#007AD2', fontWeight: 'bold' }}
   className="leading-tight mb-12 text-center"
 >
   🎉 Thank You for Submitting!

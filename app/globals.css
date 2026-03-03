@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+body {
+  color: #464646;
+  font-family: var(--font-plus-jakarta);
+}
+/* tutor auto scroll animation */
+@keyframes tutor-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.tutor-scroll {
+  animation: tutor-scroll 25s linear infinite;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

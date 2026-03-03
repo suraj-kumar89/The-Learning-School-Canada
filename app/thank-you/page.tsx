@@ -18,14 +18,14 @@ export default function ThankYouPage() {
 
           {/* BIGGER HEADING: text-5xl to text-8xl */}
           <h1 
-  style={{ fontSize: '65px', marginTop:"60px", color: '#007AD2', fontWeight: 'bold' }}
+  style={{ fontSize: '45px', marginTop:"50px", color: '#007AD2', fontWeight: 'bold' }}
   className="leading-tight mb-12 text-center"
 >
   🎉 Thank You for Submitting!
 </h1>
 
           {/* BIGGER PARAGRAPH: text-2xl to text-4xl */}
-          <p className="text-2xl sm:text-2xl md:text-3xl text-[#464646] font-medium leading-relaxed mb-16"  style={{marginTop:"30px"}}>
+          <p className="text-xl sm:text-xl md:text-3xl text-[#464646] font-medium leading-relaxed mb-16"  style={{marginTop:"30px"}}>
             We have received your details successfully.
             <br className="hidden md:block" />
             Our team will contact you shortly to guide you further.

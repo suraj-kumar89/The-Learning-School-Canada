@@ -41,70 +41,71 @@ export default function Bottomestrip() {
       </div>
 
       <style jsx>{`
-        .bottomstrip-wrapper {
-          position: fixed;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          z-index: 999;
+  .bottomstrip-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
 
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
 
-          padding: 1.5rem 8rem;
+    padding: 1.5rem 8rem;
 
-          backdrop-filter: blur(16px);
-          background: rgba(251, 244, 209, 0.65);
+    backdrop-filter: blur(16px);
+    background: rgba(251, 244, 209, 0.65);
 
-          opacity: 0;
-          transition: opacity 0.4s ease;
-        }
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
 
-        .bottomstrip-wrapper.active {
-          opacity: 1;
-        }
+  .bottomstrip-wrapper.active {
+    opacity: 1;
+  }
 
-        .bs-price-section {
-          font-size: 15px;
-          font-weight: 700;
-          color: #111;
-        }
+  .bs-price-section {
+    font-size: 15px;
+    font-weight: 700;
+    color: #111;
+  }
 
-        .bs-features {
-          display: flex;
-          gap: 3rem;
-          align-items: center;
-          font-size: 15px;
-          font-weight: 700;
-          color: #111;
-        }
+  .bs-features {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #111;
+  }
 
-        .bs-feature {
-          display: flex;
-          gap: 3rem;
-          align-items: center;
-          font-size: 15px;
-          font-weight: 700;
-          color: #111;
-        }
+  .bs-feature {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+  }
 
-  transition: transform 0.2s ease;
-}
-        
-        /* MOBILE */
-        @media (max-width: 768px) {
-          .bottomstrip-wrapper {
-            padding: 0.8rem 1rem;
-            gap: 1rem;
-            justify-content: space-between;
-            align-items: center;
-          }
+  /* MOBILE OPTIMIZATION */
+  @media (max-width: 768px) {
+    .bottomstrip-wrapper {
+      padding: 1rem;
+      gap: 0;
+      justify-content: center;
+    }
 
-       
-        }
-      `}</style>
+    .bs-price-section,
+    .bs-features {
+      display: none;   /* 👈 Hide everything except button */
+    }
+
+    .bottomstrip-wrapper a {
+      width: 100%;     /* 👈 Full width button */
+      text-align: center;
+    }
+  }
+`}</style>
     </>
   );
 }
